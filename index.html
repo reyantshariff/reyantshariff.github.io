@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reyan Shariff | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 1em 0;
+    }
+    nav button {
+      margin: 0 0.5em;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    section {
+      display: none;
+      padding: 2em;
+    }
+    section.active {
+      display: block;
+    }
+    a {
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reyan Shariff</h1>
+    <p>CS Student @ Duke • Full-Stack & ML Enthusiast</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('resume')">Resume</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <main>
+    <section id="about" class="active">
+      <h2>About Me</h2>
+      <p>Hi, I'm Reyan — a computer science student at Duke with experience in full-stack web development, machine learning, and AI/LLM-powered systems. I love building things that solve real problems.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>P300 Speller:</strong> EEG-based ML system for ALS patients – <a href="https://github.com/reyantshariff/p300-speller">GitHub</a></li>
+        <li><strong>Platformer Game Engine:</strong> Built with JavaFX and command pattern – <a href="#">Demo</a></li>
+        <li><strong>Sustainable Recipe Generator:</strong> LLM-powered food recommender using OpenAI API – <a href="#">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">View/Download Resume (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:reyan.shariff@duke.edu">reyan.shariff@duke.edu</a></p>
+      <p>GitHub: <a href="https://github.com/reyantshariff" target="_blank">github.com/reyantshariff</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/reyan-shariff" target="_blank">linkedin.com/in/reyan-shariff</a></p>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
