@@ -106,3 +106,90 @@ footer {
 .contact-list li {
   margin-bottom: 0.5em;
 }
+
+.contact-section {
+  background: #0f0f0f;
+  color: #f1f1f1;
+  padding: 3em 1em;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: 1000px;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 300px;
+}
+
+.contact-left h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #fff;
+  border-bottom: 3px solid #e53935;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+
+.contact-left p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.contact-info li {
+  margin-bottom: 1em;
+  list-style: none;
+  font-size: 1em;
+}
+
+.contact-info a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background: #101820;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3em;
+  color: #f1f1f1;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.2em;
+  background: #181818;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+form button {
+  background: #2962ff;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0039cb;
+}
+
