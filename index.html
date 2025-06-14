@@ -43,10 +43,11 @@
 <body>
   <header>
     <h1>Reyan Shariff</h1>
-    <p>CS Student @ Duke • Full-Stack & ML Enthusiast</p>
+    <p>CS Student @ Duke</p>
   </header>
 
   <nav>
+     <button onclick="showSection('home')">Home</button>
     <button onclick="showSection('about')">About</button>
     <button onclick="showSection('projects')">Projects</button>
     <button onclick="showSection('resume')">Resume</button>
@@ -54,16 +55,45 @@
   </nav>
 
   <main>
+    <section id="home" class="active">
+      <h2>Home</h2>
+      <p>Hi, I'm Reyan — a computer science student at Duke with experience in full-stack development and machine learning research. I am especially interested in the applications of machine learning in the healthcare space.</p>
+    <div class="contact-container">
+    <div class="contact-left">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out to me for collaborations, project opportunities, or just to connect!</p>
+      <ul class="contact-info">
+        <li>📧 <a href="mailto:reyan.shariff@duke.edu">reyan.shariff@duke.edu</a></li>
+        <li>🐙 <a href="https://github.com/reyantshariff" target="_blank">github.com/reyantshariff</a></li>
+        <li>🔗 <a href="linkedin.com/in/reyan-shariff" target="_blank">https://www.linkedin.com/in/reyan-shariff-67861425b/</a></li>
+      </ul>
+    </div>
+    <div class="contact-right">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+    </section>
     <section id="about" class="active">
       <h2>About Me</h2>
-      <p>Hi, I'm Reyan — a computer science student at Duke with experience in full-stack web development, machine learning, and AI/LLM-powered systems. I love building things that solve real problems.</p>
+      <p>Hi, I'm Reyan — a computer science student at Duke with experience in full-stack development and machine learning research. I am especially interested in the applications of machine learning in the healthcare space.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>P300 Speller:</strong> EEG-based ML system for ALS patients – <a href="https://github.com/reyantshariff/p300-speller">GitHub</a></li>
-        <li><strong>Platformer Game Engine:</strong> Built with JavaFX and command pattern – <a href="#">Demo</a></li>
+        <li><strong>Cellular Automata:</strong> Built with JavaFX and command pattern – <a href="#">Demo</a></li>
         <li><strong>Sustainable Recipe Generator:</strong> LLM-powered food recommender using OpenAI API – <a href="#">GitHub</a></li>
       </ul>
     </section>
@@ -71,13 +101,6 @@
     <section id="resume">
       <h2>Resume</h2>
       <p><a href="resume.pdf" target="_blank">View/Download Resume (PDF)</a></p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:reyan.shariff@duke.edu">reyan.shariff@duke.edu</a></p>
-      <p>GitHub: <a href="https://github.com/reyantshariff" target="_blank">github.com/reyantshariff</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/reyan-shariff" target="_blank">linkedin.com/in/reyan-shariff</a></p>
     </section>
   </main>
 
