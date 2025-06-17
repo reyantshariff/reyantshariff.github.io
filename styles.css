@@ -146,3 +146,15 @@ a:hover {
 .project-description a:hover {
   text-decoration: underline;
 }
+
+.profile-pic {
+  height: 100px;
+  border-radius: 8px;
+  margin-top: 1em;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
