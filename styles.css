@@ -121,3 +121,51 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Project Section Styling */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 1.5em;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  max-height: 250px;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-description {
+  margin-top: 1em;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-description a {
+  font-weight: bold;
+  color: #007acc;
+}
+
+.project-description a:hover {
+  text-decoration: underline;
+}
