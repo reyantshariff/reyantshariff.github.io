@@ -37,6 +37,10 @@ nav button:hover {
   background-color: #005fa3;
 }
 
+a {
+  color: #007acc;
+}
+
 main {
   max-width: 960px;
   margin: 2em auto;
@@ -44,6 +48,30 @@ main {
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: white;
+  padding: 1em 2em;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+  margin-left: -80px;
+}
+
+.header-spacer {
+  width: 80px;
+}
+
+.logo-img {
+  height: 80px;
+  border-radius: 8px;
 }
 
 /* Section Switching */
@@ -54,57 +82,6 @@ section {
 
 section.active {
   display: block;
-}
-
-/* Contact Section */
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 2em;
-}
-
-.contact-left {
-  flex: 1 1 250px;
-}
-
-.contact-right {
-  flex: 1 1 300px;
-  background: #ffffff;
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* Form Styling */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75em;
-  font-size: 1em;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form button {
-  background: #007acc;
-  color: white;
-  padding: 0.75em;
-  font-size: 1em;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 .contact-form button:hover {
