@@ -41,16 +41,22 @@
   </style>
 </head>
 <body>
-  <header style="display: flex; align-items: center; padding: 1em; background-color: #111; color: white;">
-  <!-- Logo on top left, links to home section -->
+  <header style="display: flex; align-items: center; justify-content: space-between; background-color: #111; color: white; padding: 1em 2em;">
+  <!-- Logo on the left -->
   <a href="#" onclick="showSection('home')">
-    <img src="/images/newprofilepic.jpg" alt="Home Logo" style="height: 50px; margin-right: 1em;" />
+    <img src="/images/newprofilepic.jpg" alt="Home Logo" style="height: 80px; border-radius: 8px;" />
   </a>
-  <div>
-    <h1>Reyan Shariff</h1>
-    <p>CS Student @ Duke</p>
+
+  <!-- Name and subtitle centered -->
+  <div style="flex: 1; text-align: center; margin-left: -80px;">
+    <h1 style="margin: 0;">Reyan Shariff</h1>
+    <p style="margin: 0;">CS Student @ Duke</p>
   </div>
+
+  <!-- Spacer to balance layout -->
+  <div style="width: 80px;"></div>
 </header>
+
 
 
   <nav>
