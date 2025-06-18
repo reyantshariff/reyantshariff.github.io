@@ -149,7 +149,7 @@ a:hover {
 
 .profile-pic {
   height: 75px;
-  width: 75px;
+  width: 100px;
   border-radius: 8px;
   margin-top: 1em;
   transition: transform 0.2s ease;
