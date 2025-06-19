@@ -180,3 +180,44 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
+  color: #111;
+}
+
+.experience-subtitle {
+  font-size: 0.95em;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.experience-details {
+  list-style: disc;
+  padding-left: 1.2em;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+

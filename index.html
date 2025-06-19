@@ -27,9 +27,8 @@
 
   <nav>
      <button onclick="showSection('home')">Home</button>
-    <button onclick="showSection('about')">About</button>
     <button onclick="showSection('projects')">Projects</button>
-    <button onclick="showSection('resume')">Resume</button>
+    <button onclick="showSection('experience')">Experience</button>
   </nav>
 
   <main>
@@ -48,11 +47,6 @@
     </div>
   </div>
 
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Reyan — a computer science student at Duke with experience in full-stack development and machine learning research. I am especially interested in the applications of machine learning in the healthcare space.</p>
     </section>
 
     <section id="projects">
@@ -90,9 +84,49 @@
 </section>
 
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">View/Download Resume (PDF)</a></p>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+  <div class="experience-card">
+    <h3>Software Engineering Intern</h3>
+    <p class="experience-subtitle">Physicians Angels · June 2025-Present</p>
+    <ul class="experience-details">
+      <li>Building AI agents for onboarding automation</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Machine Learning Engineer Intern</h3>
+    <p class="experience-subtitle">Duke BCI Lab · May 2024–Present</p>
+    <ul class="experience-details">
+      <li>Implemented a brain-computer interface (BCI) typing system in Python, integrating and deploying machine learning models like EEGNet and Stepwise Linear Discriminant Analysis to classify brain signals in real time.</li>
+      <li>Created Data Preprocessing Pipelinees for EEG data from MATLAB and EDF using MNE-Python</li>
+      <li>Co-authored abstract accepted at AAAI 2025</li>
+    </ul>
+  </div>
+
+   <div class="experience-card">
+    <h3>Machine Learning Research Intern</h3>
+    <p class="experience-subtitle">Duke Interpretable Machine Learning Lab · August 2024-February 2025</p>
+    <ul class="experience-details">
+      <li>Developed the model architecture for an Interpretable Neural Network and trained it to reach 70 percent accuracy.</li>
+    </ul>
+  </div>
+
+    <div class="experience-card">
+    <h3>Software Engineer Intern</h3>
+    <p class="experience-subtitle">Hickey Lab · August 2024-February 2025</p>
+    <ul class="experience-details">
+      <li>Developed and optimized data processing pipelines for analyzing over 100,000 cell samples, leveraging Python libraries including NumPy and Pandas.</li>
+      <li>Integrated the OpenAI API into existing systems to enrich spatial datasets with automated annotations.</li>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
     </section>
   </main>
 
