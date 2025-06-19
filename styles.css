@@ -220,4 +220,30 @@ a:hover {
   line-height: 1.6;
 }
 
+.publication-highlight {
+  background: #f1f8ff;
+  border-left: 4px solid #007acc;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+.pub-abstract {
+  font-size: 0.93rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 0.8em;
+}
+
+.pub-link {
+  font-weight: 500;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+
 
