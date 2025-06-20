@@ -1,16 +1,29 @@
 /* Global Styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5;
-  color: #222;
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fa;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 header {
   background: #111;
   color: white;
-  padding: 2em 1em;
+  padding: 2rem 1rem;
   text-align: center;
   position: sticky;
   top: 0;
@@ -18,17 +31,18 @@ header {
 }
 
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
   padding: 1em;
   background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 80px;
   z-index: 999;
 }
 
 nav button {
-  margin: 0 0.5em;
   padding: 0.6em 1.4em;
   background-color: #007acc;
   color: white;
@@ -37,11 +51,12 @@ nav button {
   font-size: 1em;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 nav button:hover {
   background-color: #005fa3;
+  transform: scale(1.03);
 }
 
 a {
@@ -55,85 +70,46 @@ a:hover {
 }
 
 main {
-  max-width: 960px;
-  margin: 2em auto;
-  padding: 1em;
+  max-width: 880px;
+  margin: 3em auto;
+  padding: 2em;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #111;
-  color: white;
-  padding: 1em 2em;
-  flex-wrap: wrap;
-}
-
-.header-center {
-  flex: 1;
-  text-align: center;
-  margin-left: -80px;
-}
-
-.logo-img {
-  height: 80px;
-  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
 
 section {
   display: none;
-  padding: 2em;
+  padding: 2em 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 section.active {
   display: block;
 }
 
-.contact-form button:hover {
-  background: #005fa3;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
-  margin-top: 2em;
-}
-
-.project-card {
-  background: white;
+.project-card,
+.experience-card,
+.publication-highlight {
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  padding: 2em;
+  margin-bottom: 2em;
   transition: transform 0.3s ease;
-  padding: 1.5em;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
+.project-card:hover,
+.experience-card:hover {
+  transform: translateY(-4px);
 }
 
-.project-card img {
+.project-card img,
+.profile-feature-img {
   width: 100%;
   border-radius: 10px;
-  transition: transform 0.3s ease;
   object-fit: cover;
-  max-height: 240px;
-}
-
-.project-card img:hover {
-  transform: scale(1.03);
-}
-
-.project-description {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .profile-pic {
@@ -149,99 +125,9 @@ section.active {
   transform: scale(1.05);
 }
 
-.project-card h3 {
-  font-size: 1.4em;
-  margin-bottom: 0.2em;
-  color: #111;
-}
-
-.project-subtitle {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 0.8em;
-  font-style: italic;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em;
-  margin-top: 2em;
-}
-
-.experience-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  padding: 1.5em;
-  transition: transform 0.3s ease;
-}
-
-.experience-card:hover {
-  transform: translateY(-6px);
-}
-
-.experience-card h3 {
-  font-size: 1.4em;
-  margin-bottom: 0.2em;
-  color: #111;
-}
-
-.experience-subtitle {
-  font-size: 0.95em;
-  color: #555;
-  font-style: italic;
-  margin-bottom: 1em;
-}
-
-.experience-details {
-  list-style: disc;
-  padding-left: 1.2em;
-  color: #333;
-  font-size: 0.95em;
-  line-height: 1.6;
-}
-
-.publication-highlight {
-  background: #f7fbff;
-  border-left: 4px solid #007acc;
-  padding: 1.2em 1.5em;
-  border-radius: 6px;
-  margin-top: 1em;
-}
-
-.publication-highlight h4 {
-  margin: 0 0 0.4em;
-  font-size: 1.1em;
-  color: #007acc;
-}
-
-.pub-title {
-  margin: 0 0 0.6em;
-  font-size: 0.95em;
-  color: #333;
-}
-
-.pub-snippet {
-  font-size: 0.92em;
-  color: #444;
-  margin-bottom: 0.8em;
-  line-height: 1.5;
-}
-
-.pub-link {
-  font-weight: 600;
-  color: #007acc;
-  text-decoration: none;
-}
-
-.pub-link:hover {
-  text-decoration: underline;
-}
-
 .icon-button {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin: 0 6px;
   transition: transform 0.2s;
 }
@@ -254,54 +140,44 @@ section.active {
   display: flex;
   gap: 12px;
   margin-top: 12px;
-  align-items: center;
   flex-wrap: wrap;
-}
-
-.profile-feature-img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 12px;
-  margin-top: 1em;
-  object-fit: cover;
+  justify-content: start;
 }
 
 .contact-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
-  margin-top: 1.5rem;
 }
 
-.contact-left {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
+.contact-left,
 .contact-right {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
+  min-width: 280px;
 }
 
-/* Responsive Tweaks */
+.projects-grid,
+.experience-grid {
+  display: grid;
+  gap: 2em;
+}
+
+.publication-highlight {
+  background: #f1faff;
+  border-left: 4px solid #007acc;
+}
+
 @media (max-width: 768px) {
   .main-header {
     flex-direction: column;
     text-align: center;
-    padding: 1em;
   }
 
-  nav button {
-    display: inline-block;
-    margin-top: 0.5em;
+  nav {
+    flex-direction: column;
   }
 
   .contact-container {
@@ -309,16 +185,22 @@ section.active {
     align-items: center;
   }
 
+  main {
+    margin: 1.5em;
+    padding: 1.5em;
+  }
+
+  nav button {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
   .icon-button {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 
   .profile-feature-img {
     max-width: 100%;
-  }
-
-  main {
-    padding: 1em 0.5em;
   }
 }
