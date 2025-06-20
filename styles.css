@@ -23,10 +23,8 @@ p {
 header {
   background: #1f1f1f;
   color: white;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 0.5rem;
   text-align: center;
-  position: sticky;
-  top: 0;
   z-index: 1000;
 }
 
@@ -51,7 +49,7 @@ nav {
   background: #1f1f1f;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
-  top: 80px;
+  top: 0;
   z-index: 999;
 }
 
