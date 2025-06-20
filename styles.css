@@ -252,6 +252,48 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Icon buttons */
+.icon-button {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+/* Profile photo next to contact info */
+.profile-feature-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1em;
+  object-fit: cover;
+}
+
+/* Contact layout with responsive flex */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 
 
