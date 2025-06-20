@@ -1,7 +1,7 @@
 /* Global Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f8f9fa;
+  background: #f0f2f5;
   color: #222;
   margin: 0;
   padding: 0;
@@ -12,6 +12,9 @@ header {
   color: white;
   padding: 2em 1em;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -19,16 +22,20 @@ nav {
   padding: 1em;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 80px;
+  z-index: 999;
 }
 
 nav button {
   margin: 0 0.5em;
-  padding: 0.5em 1.2em;
+  padding: 0.6em 1.4em;
   background-color: #007acc;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1em;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -39,6 +46,12 @@ nav button:hover {
 
 a {
   color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -46,8 +59,8 @@ main {
   margin: 2em auto;
   padding: 1em;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .main-header {
@@ -57,6 +70,7 @@ main {
   background-color: #111;
   color: white;
   padding: 1em 2em;
+  flex-wrap: wrap;
 }
 
 .header-center {
@@ -65,16 +79,11 @@ main {
   margin-left: -80px;
 }
 
-.header-spacer {
-  width: 80px;
-}
-
 .logo-img {
   height: 80px;
   border-radius: 8px;
 }
 
-/* Section Switching */
 section {
   display: none;
   padding: 2em;
@@ -88,18 +97,6 @@ section.active {
   background: #005fa3;
 }
 
-/* Links */
-a {
-  color: #0366d6;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Project Section Styling */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -109,42 +106,34 @@ a:hover {
 
 .project-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease;
   padding: 1.5em;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
   object-fit: cover;
-  max-height: 250px;
+  max-height: 240px;
 }
 
 .project-card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .project-description {
-  margin-top: 1em;
-  font-size: 0.95rem;
+  font-size: 1em;
   line-height: 1.6;
-}
-
-.project-description a {
-  font-weight: bold;
-  color: #007acc;
-}
-
-.project-description a:hover {
-  text-decoration: underline;
+  color: #333;
+  margin-bottom: 1em;
 }
 
 .profile-pic {
@@ -162,22 +151,15 @@ a:hover {
 
 .project-card h3 {
   font-size: 1.4em;
-  margin: 0 0 0.2em 0;
+  margin-bottom: 0.2em;
   color: #111;
 }
 
 .project-subtitle {
   font-size: 0.9em;
-  color: #555;
+  color: #666;
   margin-bottom: 0.8em;
   font-style: italic;
-}
-
-.project-description {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 1em;
 }
 
 .experience-grid {
@@ -189,14 +171,14 @@ a:hover {
 
 .experience-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 1.5em;
   transition: transform 0.3s ease;
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .experience-card h3 {
@@ -257,11 +239,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Icon buttons */
 .icon-button {
-  width: 80px;
-  height: 80px;
-  margin: 0 8px;
+  width: 60px;
+  height: 60px;
+  margin: 0 6px;
   transition: transform 0.2s;
 }
 
@@ -271,12 +252,12 @@ a:hover {
 
 .icon-links {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   margin-top: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Profile photo next to contact info */
 .profile-feature-img {
   max-width: 300px;
   width: 100%;
@@ -285,7 +266,6 @@ a:hover {
   object-fit: cover;
 }
 
-/* Contact layout with responsive flex */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -309,4 +289,36 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
+
+  nav button {
+    display: inline-block;
+    margin-top: 0.5em;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-feature-img {
+    max-width: 100%;
+  }
+
+  main {
+    padding: 1em 0.5em;
+  }
 }
