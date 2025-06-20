@@ -259,8 +259,8 @@ a:hover {
 
 /* Icon buttons */
 .icon-button {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   margin: 0 8px;
   transition: transform 0.2s;
 }
